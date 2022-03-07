@@ -17,11 +17,6 @@
 
 #include "os.h"
 
-#ifdef __linux__
-#include <endian.h>
-#include <byteswap.h>
-#endif /* __linux__ */
-
 #if defined(__FreeBSD__) || defined(__NetBSD__) || defined(__DragonFly__) || \
     defined(__OpenBSD__)
 #include <sys/types.h>

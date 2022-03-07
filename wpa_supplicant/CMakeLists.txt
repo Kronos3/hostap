@@ -1,0 +1,51 @@
+add_library(wpa_supplicant STATIC
+        blacklist.c
+        config.c
+        config_file_circle.c
+        events.c
+        main_circle.cpp
+        notify.c
+        scan.c
+        wpa_supplicant.c
+        wpas_glue.c
+        wpasupplicant.cpp
+
+        ../src/common/wpa_common.c
+        ../src/crypto/aes-internal-dec.c
+        ../src/crypto/aes-internal.c
+        ../src/crypto/aes-unwrap.c
+        ../src/crypto/md5-internal.c
+        ../src/crypto/md5.c
+        ../src/crypto/rc4.c
+        ../src/crypto/sha1-internal.c
+        ../src/crypto/sha1-pbkdf2.c
+        ../src/crypto/sha1.c
+        ../src/crypto/tls_none.c
+        ../src/drivers/drivers.c
+        ../src/drivers/driver_circle.cpp
+        ../src/drivers/scan_helpers.c
+        ../src/eapol_supp/eapol_supp_sm.c
+        ../src/eap_common/eap_common.c
+        ../src/eap_peer/eap.c
+        ../src/eap_peer/eap_methods.c
+        ../src/l2_packet/l2_packet_circle.cpp
+        ../src/rsn_supp/pmksa_cache.c
+        ../src/rsn_supp/preauth.c
+        ../src/rsn_supp/wpa.c
+        ../src/rsn_supp/wpa_ie.c
+        ../src/utils/base64.c
+        ../src/utils/common.c
+        ../src/utils/eloop_circle.c
+        ../src/utils/os_circle.cpp
+        ../src/utils/wpa_debug.c
+        ../src/utils/wpabuf.c
+)
+target_include_directories(wpa_supplicant
+        PUBLIC
+        ../src
+        ../src/common
+        ../src/crypto
+        ../src/rsn_supp
+        ../src/utils
+)
+target_compile_definitions(wpa_supplicant PRIVATE CONFIG_DRIVER_CIRCLE IEEE8021X_EAPOL)
