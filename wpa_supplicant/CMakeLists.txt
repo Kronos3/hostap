@@ -49,3 +49,4 @@ target_include_directories(wpa_supplicant
         ../src/utils
 )
 target_compile_definitions(wpa_supplicant PRIVATE CONFIG_DRIVER_CIRCLE IEEE8021X_EAPOL)
+target_link_libraries(wpa_supplicant circle)
