@@ -41,7 +41,7 @@ extern "C" {
 
 #include <circle/netdevice.h>
 #include <circle/macaddress.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <wlan/bcm4343.h>
 #include <assert.h>
 

@@ -15,7 +15,7 @@
 #define _wpasupplicant_h
 
 #include <circle/sched/synchronizationevent.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/types.h>
 
 class CWPASupplicant

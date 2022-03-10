@@ -12,7 +12,7 @@
 // license.
 //
 #include "os_circle.h"
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/logger.h>
 #include <circle/timer.h>
 #include <circle/startup.h>
