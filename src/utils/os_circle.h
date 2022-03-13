@@ -36,8 +36,6 @@ extern "C" {
 #define bswap_16	bswap16
 #define bswap_32	bswap32
 
-typedef signed long	time_t;
-
 #define abs		__wpa_abs
 #define isprint		__wpa_isprint
 #define strrchr		__wpa_strrchr
